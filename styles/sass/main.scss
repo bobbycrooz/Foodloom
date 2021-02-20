@@ -307,14 +307,9 @@ section.menu{
         &{
             padding: 45px;
         }
-           
-        }
         .content{
             margin-top: 40px;
-            display: flex;
-            justify-content: center;
-            flex-direction: row-reverse;
-            flex-wrap: wrap;
+     
             .box{
                 margin: 15px;
                 width: 100%;
@@ -326,7 +321,11 @@ section.menu{
                 }
             }
         }
+           
+        }
+       
     }
+    
     
 
 

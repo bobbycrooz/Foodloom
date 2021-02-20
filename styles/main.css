@@ -251,21 +251,17 @@ section.menu .content .box .text {
   section.menu {
     padding: 45px;
   }
-}
-section.menu .content {
-  margin-top: 40px;
-  display: flex;
-  justify-content: center;
-  flex-direction: row-reverse;
-  flex-wrap: wrap;
-}
-section.menu .content .box {
-  margin: 15px;
-  width: 100%;
-}
-section.menu .content .box .text {
-  text-align: center;
-  padding: 9px 0 5px 3px;
+  section.menu .content {
+    margin-top: 40px;
+  }
+  section.menu .content .box {
+    margin: 15px;
+    width: 100%;
+  }
+  section.menu .content .box .text {
+    text-align: center;
+    padding: 9px 0 5px 3px;
+  }
 }
 
 section.expert .title {
