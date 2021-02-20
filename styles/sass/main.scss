@@ -1,0 +1,121 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@mixin max-beak($size) {
+    @media only screen and (max-width:$size){
+        @content
+    }
+    
+}
+
+@mixin min-beak($size) {
+    @media only screen and (min-width:$size){
+        @content
+    }
+    
+}
+
+
+
+.banner{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #333 url("/assets/bg.jpg") no-repeat center;
+    background-size: cover;
+    .content{
+        max-width: 900px;
+        text-align: center;
+        h2{
+            font-size: 5em;
+            color: #fff;
+        }
+    }
+    .btn{
+        font-size: 1em;
+        color: #fff;
+        border: none;
+        background: brown;
+        padding: 4px 10px;
+        text-align: center;
+    }
+}
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width:100%;
+    padding: 40px 100px;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: padding 0.5s;
+    &.sticky{
+        box-shadow:0 2px 4px rgba(51, 51, 51, 0.753);
+        background-color: #fff;
+        padding: 10px 100px; 
+        .logo{
+            color: black;
+        }
+        .nav{
+          
+            li{
+             
+                a{
+                  
+                    color: #111;
+                   
+                 }
+            }
+        }
+
+    }
+    .logo{
+        color: white;
+        font-size: 2em;
+        text-decoration: none;
+        span{
+            color: #ff0157;
+        }
+    }
+    .nav{
+        position: relative;
+        display: flex;
+        li{
+            list-style: none;
+            margin-left: 30px;
+            a{
+                text-decoration: none;
+                color: #fff;
+                font-weight: 500;
+            }
+        }
+    }
+    @include max-beak(830px){
+        padding: 20px 50px;
+        &.sticky{
+          
+            padding: 10px 50px; 
+        }
+    
+        .logo{
+            flex: 1;
+
+        }
+        .nav{
+       
+            li{
+                list-style: none;
+                margin-left: 20px;
+               
+            }
+        }
+    }
+}
