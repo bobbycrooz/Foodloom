@@ -176,5 +176,48 @@ section.menu .content .box .imgbox img {
   height: 100%;
   object-fit: cover;
 }
+section.menu .content .box .text {
+  padding: 9px 0 5px 3px;
+}
+
+section.expert .title {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+section.expert .title .title_text span {
+  color: #ff0157;
+}
+section.expert .content {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  flex-direction: row-reverse;
+  flex-wrap: wrap;
+}
+section.expert .content .box {
+  margin: 15px;
+  width: 250px;
+  border: 15px solid #fff;
+  box-shadow: 0 5px 30px rgba(0, 0, 0, 0.199);
+}
+section.expert .content .box .imgbox {
+  position: relative;
+  width: 100%;
+  height: 300px;
+}
+section.expert .content .box .imgbox img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+section.expert .content .box .text {
+  padding: 9px 0 5px 3px;
+}
 
 /*# sourceMappingURL=main.css.map */
