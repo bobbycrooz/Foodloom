@@ -471,9 +471,19 @@ section.contact .form_box .input_box input[type=submit] {
 }
 @media only screen and (max-width: 810px) {
   section.contact {
+    padding: 40px;
     background-size: contain;
     background-repeat: no-repeat;
     background-position: bottom;
+  }
+  section.contact .form_box {
+    padding: 30px 10px;
+    margin-top: 50px;
+    width: 100%;
+    box-shadow: 0 2px 5px rgba(7, 7, 7, 0.507);
+  }
+  section.contact .form_box .input_box {
+    margin-bottom: 10px;
   }
 }
 

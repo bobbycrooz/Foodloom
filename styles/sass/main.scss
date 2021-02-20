@@ -555,9 +555,25 @@ section.contact{
     }
     @include max-beak(810px){
         &{
+            padding: 40px;
             background-size: contain;
             background-repeat: no-repeat;
             background-position: bottom;
+        }
+        .form_box{
+           
+            padding: 30px 10px;
+            margin-top: 50px;
+            width: 100%;
+            box-shadow: 0 2px 5px rgba(7, 7, 7, 0.507);
+          
+            .input_box{
+               
+                margin-bottom: 10px;
+             
+                
+                
+            }
         }
     }
 }
