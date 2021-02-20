@@ -27,18 +27,32 @@ section {
 .banner .content {
   max-width: 900px;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .banner .content h2 {
-  font-size: 5em;
+  font-size: 3.7em;
   color: #fff;
 }
-.banner .btn {
+.banner .content p {
+  color: #fff;
+  font-size: 1.2em;
+}
+.banner .content .btn {
+  margin-top: 20px;
   font-size: 1em;
   color: #fff;
   border: none;
-  background: brown;
+  background: #ff0157;
   padding: 4px 10px;
   text-align: center;
+  width: 150px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.banner .content .btn:hover {
+  box-shadow: 0 2px 6px #f7558b;
 }
 
 header {
@@ -218,6 +232,148 @@ section.expert .content .box .imgbox img {
 }
 section.expert .content .box .text {
   padding: 9px 0 5px 3px;
+}
+
+section.testimonials {
+  background: url("../../assets/bg2.jpg");
+  background-size: cover;
+}
+section.testimonials .title {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: #fff;
+}
+section.testimonials .title .title_text span {
+  color: #ff0157;
+}
+section.testimonials .content {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 100%;
+}
+section.testimonials .content .box {
+  margin: 15px;
+  width: 300px;
+  padding: 10px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+section.testimonials .content .box .imgbox {
+  overflow: hidden;
+  position: relative;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+}
+section.testimonials .content .box .imgbox img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+section.testimonials .content .box .text {
+  text-align: center;
+  padding: 9px 0 5px 3px;
+}
+section.testimonials .content .box .text p {
+  font-size: 0.9em;
+  color: #666;
+  font-style: italic;
+}
+section.testimonials .content .box .text h3 {
+  font-size: 14px;
+  color: #ff0157;
+  font-weight: 600;
+  margin-top: 30px;
+}
+
+section.contact {
+  background: url("../../assets/bg3.jpg");
+  background-size: cover;
+}
+section.contact .title {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+section.contact .title .title_text span {
+  color: #ff0157;
+}
+section.contact .form_box {
+  background-color: #fff;
+  padding: 75px 40px;
+  margin-top: 50px;
+  max-width: 500px;
+  box-shadow: 0 2px 5px rgba(7, 7, 7, 0.507);
+}
+section.contact .form_box h3 {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+  color: #111;
+  font-weight: 700;
+}
+section.contact .form_box .input_box {
+  position: relative;
+  width: 100%;
+  margin-bottom: 20px;
+}
+section.contact .form_box .input_box input,
+section.contact .form_box .input_box textarea {
+  width: 100%;
+  border: 1px solid #9b9b9b71;
+  padding: 10px;
+  color: #111;
+  outline: none;
+  font-size: 16px;
+  font-weight: 300;
+  resize: none;
+}
+section.contact .form_box .input_box input:focus,
+section.contact .form_box .input_box textarea:focus {
+  box-shadow: 0 0 9px #ff0157;
+  border: 0.5px solid transparent;
+}
+section.contact .form_box .input_box input[type=submit] {
+  max-width: 100px;
+  background-color: #ff0157;
+  color: #ffff;
+  font-size: 1em;
+  letter-spacing: 2px;
+  transition: 0.5s;
+  font-weight: 500;
+  text-transform: uppercase;
+  border: none;
+  cursor: pointer;
+}
+
+.copyWrite {
+  padding: 8px 40px;
+  text-align: center;
+  border-top: 1px solid #9b9b9b71;
+}
+.copyWrite p {
+  font-weight: 700;
+  font-size: 16px;
+  color: #555;
+}
+.copyWrite p a {
+  text-decoration: none;
+  color: #ff0157;
 }
 
 /*# sourceMappingURL=main.css.map */
