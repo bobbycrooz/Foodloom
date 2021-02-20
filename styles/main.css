@@ -21,7 +21,8 @@ section {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: #333 url("/assets/bg.jpg") no-repeat center;
+  background: url(../../assets/bg2.jpg);
+  background-color: #111;
   background-size: cover;
 }
 .banner .content {
@@ -86,6 +87,9 @@ header .logo {
 header .logo span {
   color: #ff0157;
 }
+header .fas {
+  display: none;
+}
 header .nav {
   position: relative;
   display: flex;
@@ -109,12 +113,43 @@ header .nav li a:hover {
   header.sticky {
     padding: 10px 50px;
   }
-  header .logo {
-    flex: 1;
+  header.sticky .fas {
+    color: #202020;
   }
-  header .nav li {
-    list-style: none;
-    margin-left: 20px;
+  header .nav {
+    display: none;
+  }
+  header .nav.active {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: fixed;
+    background-color: #fff;
+    top: 69px;
+    left: 0;
+    width: 100%;
+    height: calc(100% - 68px);
+    border: 1px solid red;
+  }
+  header .nav.active li {
+    text-align: center;
+    margin: 5px;
+  }
+  header .nav.active li a {
+    color: #1d1d1d;
+    font-weight: 700;
+    font-size: 20px;
+  }
+  header .nav.active li a:hover {
+    color: brown;
+    border-bottom: 1px solid #ff0157;
+  }
+  header .fas {
+    display: block;
+    font-size: 30px;
+    color: #fff;
+    cursor: pointer;
   }
 }
 
@@ -152,6 +187,25 @@ section.about .row .col150 .imgbox img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+@media only screen and (max-width: 810px) {
+  section.about {
+    padding: 50px;
+  }
+  section.about .row {
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    justify-content: space-between;
+  }
+  section.about .row .col150 {
+    width: 100%;
+    font-weight: 500;
+  }
+  section.about .row .col150 .imgbox {
+    margin-top: 30px;
+  }
 }
 
 section.menu .title {
@@ -193,6 +247,26 @@ section.menu .content .box .imgbox img {
 section.menu .content .box .text {
   padding: 9px 0 5px 3px;
 }
+@media only screen and (max-width: 810px) {
+  section.menu {
+    padding: 45px;
+  }
+}
+section.menu .content {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  flex-direction: row-reverse;
+  flex-wrap: wrap;
+}
+section.menu .content .box {
+  margin: 15px;
+  width: 100%;
+}
+section.menu .content .box .text {
+  text-align: center;
+  padding: 9px 0 5px 3px;
+}
 
 section.expert .title {
   width: 100%;
@@ -232,6 +306,40 @@ section.expert .content .box .imgbox img {
 }
 section.expert .content .box .text {
   padding: 9px 0 5px 3px;
+}
+@media only screen and (max-width: 810px) {
+  section.expert {
+    padding: 45px;
+  }
+  section.expert .content {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+  }
+  section.expert .content .box {
+    margin: 15px;
+    width: 100%;
+    border: 15px solid #fff;
+    box-shadow: 0 5px 30px rgba(0, 0, 0, 0.199);
+  }
+  section.expert .content .box .imgbox {
+    position: relative;
+    width: 100%;
+    height: 300px;
+  }
+  section.expert .content .box .imgbox img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  section.expert .content .box .text {
+    padding: 9px 0 5px 3px;
+  }
 }
 
 section.testimonials {
@@ -299,9 +407,14 @@ section.testimonials .content .box .text h3 {
   font-weight: 600;
   margin-top: 30px;
 }
+@media only screen and (max-width: 810px) {
+  section.testimonials {
+    padding: 45px;
+  }
+}
 
 section.contact {
-  background: url("../../assets/bg3.jpg");
+  background: url(../../assets/bg3.jpg);
   background-size: cover;
 }
 section.contact .title {
@@ -359,6 +472,13 @@ section.contact .form_box .input_box input[type=submit] {
   text-transform: uppercase;
   border: none;
   cursor: pointer;
+}
+@media only screen and (max-width: 810px) {
+  section.contact {
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: bottom;
+  }
 }
 
 .copyWrite {
