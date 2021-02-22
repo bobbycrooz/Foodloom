@@ -1,7 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Long+Cang&display=swap');
 
 // variables
 $ff: 'Poppins', sans-serif;
+$ff2:  'Long Cang', cursive;
 *{
     margin: 0;
     padding: 0;
@@ -165,12 +167,28 @@ header{
     .fas{
         display:none;
     }
+    a.logo{
+        font-family: $ff2;
+        font-weight: 600;
+        padding: 10px;
+        font-size: 65px;
+        
+    }
+    .nav{
+        // height: 50px;
+        // line
+        line-height: 50px;
+        li:hover{
+            border-bottom:5px solid #ff0157;
+           
+        }}
     &.sticky{
         box-shadow:0 2px 4px rgba(51, 51, 51, 0.753);
         background-color: #fff;
         padding: 10px 100px; 
         .logo{
             color: black;
+
         }
        
         .nav{
@@ -277,7 +295,6 @@ header{
                         font-size: 20px;
                         &:hover{
                             color: brown;
-                            border-bottom: 1px solid #ff0157;
                         }
                     }
                 }
