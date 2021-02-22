@@ -137,17 +137,17 @@ header{
     @include max-beak(830px){
         padding: 20px 50px;
         &.sticky{
+            justify-content: space-between;
+            box-shadow:0 2px 4px rgba(51, 51, 51, 0.021);
             padding: 10px 50px; 
-           
-               
-                .fas{
-
-                      color: rgb(32, 32, 32);  
-                    
-                   }
-            
+            .logo{
+                margin-left: -15px;
+            }
+           .fas{
+               margin-right: -15px;
+                color: rgb(32, 32, 32);  
+                        } 
         }
-        
         .nav{
             display: none;
             &.active{
@@ -157,12 +157,10 @@ header{
                 flex-direction: column;
                 position: fixed;
                 background-color: #fff;
-                top: 69px;
+                top: 68px;
                 left:0;
                 width:100%;
                 height: calc(100% - 68px);
-               
-                border: 1px solid red;
                 li{
                    text-align: center;
                   
